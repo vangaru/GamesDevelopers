@@ -1,0 +1,208 @@
+body{
+	margin: 0;
+	font-family: Arial;
+	background-color: #f2f3f4;
+}
+
+.container{
+	width: 100%;
+	max-width: 1000px;
+	padding: 15px;
+	margin: 0 auto;
+
+}
+
+header{
+	background-color: rgba(255, 255, 255, 0.8);
+	color: black;
+	z-index: 999;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+}
+
+.head-list{
+	float: right;
+}
+
+.head-list ul{
+	padding: 0;
+}
+
+.head-list li{
+	color: gray;
+	display: inline;
+	list-style: none;
+	margin: 20px;
+}
+
+.head-list .current-li{
+	font-style: italic;
+	color: black;
+}
+
+.topboard{
+	background-color: rgba(120, 120, 120, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin-top: 88px;
+}
+
+.topboard ul{
+	padding: 0;
+}
+
+.topboard li{
+	color: black;
+	display: inline;
+	list-style: none;
+	margin: 90px;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+.container:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.logo{
+	font-size: 50px;
+	font-weight: bolder;
+}
+
+.container-main{
+	margin-bottom: 125px;
+	margin-top: 160px; 
+}
+
+.main{
+	color: black;
+	z-index: 0;
+}
+
+.aside-bar{
+	height: 100%;
+	width: 200px;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	background-color: black;
+	overflow-x: hidden;
+	padding-top: 30px;
+}
+
+.aside-bar a{
+	padding: 6px 8px 25px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+}
+
+.aside-bar a:hover{
+	color: #f1f1f1;
+}
+
+.current-aside{
+	color: #99ccff;
+}
+
+.page-title{
+	margin-top: 150px;
+	color: black;
+	font-size: 30pt;
+}
+
+.game-news ul{
+	padding: 0;
+}
+
+.game-news-list li{
+	list-style: none;
+}
+
+.game-news-element{
+	display: flex;
+	flex-direction: row;
+}
+
+.game-news-element img{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+	width: 360px;
+	height: 216px;
+	border-radius: 10px;
+}
+
+.description{
+	margin-top: 60px;
+	margin-left: 40px;
+	font-size: 20pt;
+	text-decoration: underline;
+	color: black;
+}
+
+.description a:visited{
+	color: black;
+}
+
+.date{
+	padding-top: 70px;
+	font-size: 12pt;
+	text-decoration: none;
+	font-style: italic;
+	color: gray;
+}
+
+.forms{
+	margin-top: 50px;
+}
+
+.small{
+	padding-bottom: 15px;
+}
+
+.forms input{
+	height: 40px;
+	width: 300px;
+	border-radius: 3px;
+}
+
+.forms button{
+	height: 30px;
+	margin-top: 8px;
+	border: none;
+	background-color: green;
+	color: white;
+	border-radius: 2px;
+}
+
+footer{
+	background-color: rgba(255, 255, 255, 0.8);
+	height: 55px;
+	width: 100%;
+	position: fixed;
+	margin-top: 70px;
+	left: 0;
+	bottom: 0;
+}
+
+.foot{
+	text-align: center;
+	padding-top: 18px;
+}
+
+.copyright{
+	font-size: 10pt;
+	color: gray;
+}
