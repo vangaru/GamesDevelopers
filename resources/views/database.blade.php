@@ -1,4 +1,4 @@
-@extends('layouts.dblayout')
+@extends('layouts.app')
 
 @section('title-block')
 	База данных
@@ -6,7 +6,7 @@
 
 @section('content')
 
-@section('dbheader')
+@section('header')
 	@parent
 		<a href = "{{ route('home') }}"><li>Домашняя</li></a>
 		<a  href = "{{ route('about') }}"><li> О нас </li></a>

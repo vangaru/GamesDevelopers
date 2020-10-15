@@ -43,7 +43,7 @@ header{
 }
 
 .topboard{
-	background-color: rgba(120, 120, 120, 0.5);
+	background-color: rgba(240, 100, 80, 0.5);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -59,7 +59,67 @@ header{
 	color: black;
 	display: inline;
 	list-style: none;
-	margin: 90px;
+	margin: 80px;
+}
+
+.topboard button{
+	font-size: 12pt;
+	color: black;
+	background-color: rgba(180, 180, 180, 0);
+	border: none;
+
+}
+
+.pop-list{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.popup{
+	flex: 0 0 auto;
+	display: none;
+	border: 3px solid #f1f1f1;
+	width: 200px;
+	background-color: white;
+}
+
+.popup input{
+	margin-top: 20px;
+	width: 192px;
+	height: 30px;
+}
+
+#sort input{
+	width: 10px;
+}
+
+.popup .send{
+	background-color: rgb(76, 175, 80);
+}
+
+.popup .close{
+	background-color: red;
+}
+
+.popup button{
+	color: white;
+	margin-top: 10px;
+	height: 30px;
+	width: 100%;
+	border: none;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+.popup .send:hover{
+	background-color: rgba(76, 175, 80, 0.7);
+}
+
+.popup .close:hover{
+	background-color: rgba(255, 0, 0, 0.7);
 }
 
 a{
@@ -162,29 +222,6 @@ a{
 	text-decoration: none;
 	font-style: italic;
 	color: gray;
-}
-
-.forms{
-	margin-top: 50px;
-}
-
-.small{
-	padding-bottom: 15px;
-}
-
-.forms input{
-	height: 40px;
-	width: 300px;
-	border-radius: 3px;
-}
-
-.forms button{
-	height: 30px;
-	margin-top: 8px;
-	border: none;
-	background-color: green;
-	color: white;
-	border-radius: 2px;
 }
 
 footer{

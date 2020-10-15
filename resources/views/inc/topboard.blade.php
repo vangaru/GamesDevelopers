@@ -4,10 +4,7 @@
 	<div class = "container">
 		<nav>
 			<ul>
-				<a href = "#"><li>Вывод</li></a>
-				<a href = "#"><li>Поиск</li></a>
-				<a href = "#"><li>Добавление</li></a>
-				<a href = "#"><li>Удаление</li></a>
+				@show
 			</ul>
 		</nav>
 	</div>

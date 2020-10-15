@@ -35,7 +35,7 @@ Route::get('/tournirs', function(){
 	return view('tournirs');
 })->name('tournirs');
 
-Route::get('/games/games_table', function(){
+Route::get('games_table', function(){
 	return view('games_table');
 })->name('games_table');
 
