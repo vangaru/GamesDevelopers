@@ -19,10 +19,10 @@
 
 	<div class = "container-main">
 		<div class = "container pop-list">
-			@include('inc.sort')
-			@include('inc.search')
-			@include('inc.add')
-			@include('inc.delete')
+			@include('inc.games_sort')
+			@include('inc.games_search')
+			@include('inc.games_add')
+			@include('inc.games_delete')
 		</div>
 
 		@include('inc.aside-bar')

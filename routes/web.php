@@ -23,9 +23,9 @@ Route::get('/database', function(){
 	return view('database');
 })->name('database');
 
-Route::get('/games', function(){
-	return view('games');
-})->name('games');
+Route::get('/games', 'GamesController@allData')->name('games');
+
+Route::post('/games/games_addition', 'GamesController@add')->name('games_addition');
 
 Route::get('/developers', function(){
 	return view('developers');
@@ -35,14 +35,3 @@ Route::get('/tournirs', function(){
 	return view('tournirs');
 })->name('tournirs');
 
-Route::get('games_table', function(){
-	return view('games_table');
-})->name('games_table');
-
-Route::get('/developers/developers_table', function(){
-	return view('developers_table');
-})->name('developers_table');
-
-Route::get('/tournirs/torunirs_table', function(){
-	return view('tournirs_table');
-})->name('tournirs_table');

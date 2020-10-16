@@ -1,11 +1,9 @@
 @section('topboard')
 
 <div class = "topboard">
-	<div class = "container">
-		<nav>
-			<ul>
-				@show
-			</ul>
-		</nav>
-	</div>
+	<nav>
+		<ul>
+			@show
+		</ul>
+	</nav>
 </div>
