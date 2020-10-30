@@ -11,7 +11,6 @@
 	<li><button class = "sort-button" onclick = "open_sort()">Сортировка</button></li>
 	<li><button class = "search-button" onclick = "open_search()">Поиск</button></li>
 	<li><button class = "add-button" onclick = "open_add()">Добавление</button></li>
-	<li><button class = "delete-button" onclick = "open_delete()">Удаление</button></li>
 @endsection
 
 @section('dbheader')
@@ -29,7 +28,7 @@
 		<a href = "{{ route('tournirs') }}"><span class = "current-aside">Турниры</span></a>
 	@endsection
 
-@section('sort')
+	@section('sort')
 		@parent
 		Сортировка
 	@endsection
@@ -44,10 +43,7 @@
 		Введите данные турнира
 	@endsection
 
-	@section('delete')
-		@parent
-		Удалить турнир по названию
-	@endsection
+
 
 @endsection
 	

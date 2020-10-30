@@ -11,7 +11,6 @@
 	<li><button class = "sort-button" onclick = "open_games_sort()">Сортировка</button></li>
 	<li><button class = "search-button" onclick = "open_games_search()">Поиск</button></li>
 	<li><button class = "add-button" onclick = "open_games_add()">Добавление</button></li>
-	<li><button class = "delete-button" onclick = "open_games_delete()">Удаление</button></li>
 @endsection
 
 @section('dbheader')
@@ -27,26 +26,6 @@
 		<a href = "{{ route('games') }}"><span class = "current-aside">Игры</span></a>
 		<a href = "{{ route('developers') }}">Разработчики</a>
 		<a href = "{{ route('tournirs') }}">Турниры</a>
-	@endsection
-
-	@section('games_sort')
-		@parent
-		Сортировка
-	@endsection
-
-	@section('games_search')
-		@parent
-		Найти игру по названию
-	@endsection
-
-	@section('games_add')
-		@parent
-		Введите данные игры
-	@endsection
-
-	@section('games_delete')
-		@parent
-		Удалить игру по названию
 	@endsection
 
 	@if($errors->any())
@@ -71,7 +50,7 @@
 			</tr>
 				@foreach($data as $element)
 					<tr>
-						<td><h3>{{ $element->name }}</h3></td>
+						<td><a href = "{{ route('one_game_data', $element->id) }}"><h3>{{ $element->name }}</h3></a></td>
 						<td><h3>{{ $element->developer }}</h3></td>
 						<td><h3>{{ $element->year_of_creation }}</h3></td>
 						<td><h3>{{ $element->platforms }}</h3></td>

@@ -4,7 +4,7 @@
 	<form class = "add" method = "POST" action = "{{ route('games_addition') }}">
 		{{csrf_field()}}
 
-		<label><h3>@show</h3></label>
+		<label><h3>Введите данные игры</h3></label>
 		<input name = "game_name" type = "text" placeholder = "Название игры" required="" />
 		<input name = "dev_name" type = "text" placeholder = "Разработчики" required="" />
 		<input name = "year" type = "datetime-local" placeholder = "Год релиза" required="" />

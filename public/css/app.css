@@ -87,6 +87,9 @@ header{
 }
 
 .popup{
+	display: flex;
+	position: relative;
+	z-index: auto;
 	flex: 0 0 auto;
 	display: none;
 	border: 3px solid #f1f1f1;
@@ -143,15 +146,37 @@ button:hover{
 }
 
 table{
-	border: 5px solid black;
+	width: 100%;
 	background-color: rgba(255, 255, 255, 0.6);
-	border-radius: 20px;
+	border-collapse: collapse;
+}
+
+td, tr{
+	border: 1px solid white;
+	padding: 6px;
+}
+
+.top{
+	background-color: rgba(175, 238, 238, 0.5);
+	border: 3px solid white;
+}
+
+.top td{
+	border: 3px solid white;
 }
 
 a{
+	color: black;
 	text-decoration: none;
 }
 
+a:visited{
+	color: black;
+}
+
+td a:hover{
+	color: rgb(175, 238, 238);
+}
 
 .container:after{
 	content: "";
@@ -248,6 +273,35 @@ a{
 	text-decoration: none;
 	font-style: italic;
 	color: gray;
+}
+
+.buttons{
+	display: flex;
+	flex-direction: row;
+}
+
+.update button{
+	color: white;
+	background-color: rgb(0, 128, 0);
+	width: 80px;
+	height: 40px; 
+	border: none;
+	border-radius: 5px;
+}
+
+.delete button{
+	margin-left: 10px;
+	color: white;
+	background-color: rgb(255, 36, 0);
+	width: 80px;
+	height: 40px; 
+	border: none;
+	border-radius: 5px;
+}
+
+.update input{
+	width: 600px;
+	height: 40px;
 }
 
 footer{

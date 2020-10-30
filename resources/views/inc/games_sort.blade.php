@@ -1,26 +1,18 @@
 @section('games_sort')
 
 <div class = "container popup sort" id = "games_sort">
-	<form class = "search" method = "POST" action = "{{ route('games') }}">
-		<label><h3>@show</h3></label>
+	<form class = "search" method = "POST" action = "{{ route('games_sort') }}">
+		{{csrf_field()}}
+		<label><h3>Сортировка</h3></label>
 
-		<input type = "radio" name = "field" value = "Name of the game" id = "fieldChoice1"/>
+		<input type = "radio" name = "field" value = "name" id = "fieldChoice1"/>
 		<label for = "fieldChoice1">По названию игры</label><br/>
 		
-		<input type = "radio" name = "field" value = "Developer" id = "fieldChoice2"/>
+		<input type = "radio" name = "field" value = "developer" id = "fieldChoice2"/>
 		<label for = "fieldChoice2">По разработчикам</label><br/>
 
-		<input type = "radio" name = "field" value = "Year of release" id = "fieldChoice3"/>
+		<input type = "radio" name = "field" value = "year_of_creation" id = "fieldChoice3"/>
 		<label for = "fieldChoice3">По году выпуска</label><br/>
-
-		<input type = "radio" name = "field" value = "Only for PC" id = "fieldChoice4"/>
-		<label for = "fieldChoice">Вывести игры только для PC</label><br/>
-
-		<input type = "radio" name = "field" value = "Only for Playstation" id = "fieldChoice5"/>
-		<label for = "fieldChoice">Вывести игры только для Playstation</label><br/>
-
-		<input type = "radio" name = "field" value = "Only for Xbox" id = "fieldChoice6"/>
-		<label for = "fieldChoice">Вывести игры только для Xbox</label><br/>
 
 		<button type = "submit" class = "send">Сортиовка</button>
 	</form>

@@ -22,12 +22,15 @@
 			@include('inc.games_sort')
 			@include('inc.games_search')
 			@include('inc.games_add')
-			@include('inc.games_delete')
+			@include('inc.developers_sort')
+			@include('inc.developers_search')
+			@include('inc.developers_add')
 		</div>
 
 		@include('inc.aside-bar')
 
 		@yield('main')
+		
 	</div>
 
 	@include('inc.footer')
