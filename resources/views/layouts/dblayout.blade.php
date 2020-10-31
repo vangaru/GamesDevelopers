@@ -25,6 +25,9 @@
 			@include('inc.developers_sort')
 			@include('inc.developers_search')
 			@include('inc.developers_add')
+			@include('inc.tournirs_sort')
+			@include('inc.tournirs_search')
+			@include('inc.tournirs_add')
 		</div>
 
 		@include('inc.aside-bar')

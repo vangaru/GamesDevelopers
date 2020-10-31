@@ -101,7 +101,42 @@ Route::post(
 	'DevelopersController@sort'
 )->name('developers_sort');
 
-Route::get('/tournirs', function(){
-	return view('tournirs');
-})->name('tournirs');
 
+Route::get(
+	'/tournirs', 
+	'TournirsController@allData'
+)->name('tournirs');
+
+Route::post('/tournirs/add', 
+	'TournirsController@add'
+)->name('tournirs_addition');
+
+Route::get(
+	'/tournirs/{id}',
+ 	'TournirsController@showOneTournir'
+)->name('one_tournir_data');
+
+Route::get(
+	'/tournirs/{id}/update',
+ 	'TournirsController@updateTournirData'
+ )->name('one_tournir_update');
+
+Route::get(
+	'/tournirs/{id}/delete',
+ 	'TournirsController@deleteTournirData'
+)->name('one_tournir_delete');
+
+Route::post(
+	'/tournirs/{id}/update',
+ 	'TournirsController@updateTournirDataSubmit'
+)->name('one_developer_update_submit');
+
+Route::post(
+	'/tournirs/search',
+	'TournirsController@searchTournir'
+)->name('one_tournir_search');
+
+Route::post(
+	'/tournirs/sort',
+	'TournirsController@sort'
+)->name('tournirs_sort');

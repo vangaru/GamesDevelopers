@@ -45,3 +45,29 @@ function open_developers_sort(){
 function close_developers_sort(){
 	document.getElementById("developers_sort").style.display = "none";
 }
+
+
+
+function open_tournirs_search(){
+	document.getElementById("tournirs_search").style.display = "block";
+}
+
+function close_tournirs_search(){
+	document.getElementById("tournirs_search").style.display = "none";
+}
+
+function open_tournirs_add(){
+	document.getElementById("tournirs_add").style.display = "block";
+}
+
+function close_tournirs_add(){
+	document.getElementById("tournirs_add").style.display = "none";
+}
+
+function open_tournirs_sort(){
+	document.getElementById("tournirs_sort").style.display = "block";
+}
+
+function close_tournirs_sort(){
+	document.getElementById("tournirs_sort").style.display = "none";
+}
