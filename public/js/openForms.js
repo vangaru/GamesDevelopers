@@ -46,8 +46,6 @@ function close_developers_sort(){
 	document.getElementById("developers_sort").style.display = "none";
 }
 
-
-
 function open_tournirs_search(){
 	document.getElementById("tournirs_search").style.display = "block";
 }

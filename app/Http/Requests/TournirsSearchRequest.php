@@ -13,7 +13,7 @@ class TournirsSearchRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,16 @@ class TournirsSearchRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name' => 'required|min:3|max:60',
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'name.required' => 'Название турнира является обязательным',
+            'name.min' => 'Название турнира должно содержать минимум 3 символа',
+            'name.max' => 'Название турнира должно содержать максимум 30 символов',
         ];
     }
 }

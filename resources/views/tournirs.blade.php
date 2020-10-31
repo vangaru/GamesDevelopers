@@ -49,7 +49,7 @@
 			</tr>
 				@foreach($data as $element)
 					<tr>
-						<td><a href = "{{ route('one_game_data', $element->id) }}"><h3>{{ $element->name }}</h3></a></td>
+						<td><a href = "{{ route('one_tournir_data', $element->id) }}"><h3>{{ $element->name }}</h3></a></td>
 						<td><h3>{{ $element->game }}</h3></td>
 						<td><h3>{{ $element->date_of_tournir }}</h3></td>
 					</tr>

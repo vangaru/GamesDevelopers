@@ -129,7 +129,7 @@ Route::get(
 Route::post(
 	'/tournirs/{id}/update',
  	'TournirsController@updateTournirDataSubmit'
-)->name('one_developer_update_submit');
+)->name('one_tournir_update_submit');
 
 Route::post(
 	'/tournirs/search',
