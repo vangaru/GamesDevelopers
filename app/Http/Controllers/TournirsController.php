@@ -70,4 +70,10 @@ class TournirsController extends Controller
             
         return redirect()->route('one_tournir_data', $id); 
     }
+
+    public function sort(Request $req)
+    {
+        $field = $req->input('field');
+        return view('tournirs', ['data' => tournirs::orderBy($field, "asc")->get()]);
+    }
 }
