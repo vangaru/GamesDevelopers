@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\GamesAddRequest;
 use App\Http\Requests\GamesSearchRequest;
 use App\Models\games;
+use App\Models\tournirs;
 
 class GamesController extends Controller
 {
@@ -40,6 +41,8 @@ class GamesController extends Controller
 
     public function deleteGameData($id)
     {
+        tournirs::where('game', '=', games::find($id)->name)->delete();
+
         games::find($id)->delete();
 
         return redirect()->route('games');

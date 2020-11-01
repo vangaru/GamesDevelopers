@@ -40,9 +40,9 @@ class DevelopersController extends Controller
 
     public function deleteDeveloperData($id)
     {	
-    	$developer = developers::find($id)->get();
-    	games::where('developer', '=', $developer[0]->name)->delete();
-    	developers::find($id)->delete();
+        games::where('developer', '=', developers::find($id)->name)->delete();
+
+        developers::find($id)->delete();
 
         return redirect()->route('developers');
     }
