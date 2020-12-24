@@ -16,5 +16,5 @@
 
 		<button type = "submit" class = "send">Сортиовка</button>
 	</form>
-	<button class = "close" onclick = "close_games_sort()">Закрыть</button>
+	<button class = "close" onclick = "close_developers_sort()">Закрыть</button>
 </div>

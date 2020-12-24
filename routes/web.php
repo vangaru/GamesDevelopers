@@ -19,9 +19,10 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
-Route::get('/database', function(){
-	return view('database');
-})->name('database');
+Route::get(
+	'/database', 
+	'DataBaseController@allData'
+)->name('database');
 
 Route::get(
 	'/games', 
